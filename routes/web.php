@@ -22,3 +22,4 @@ use App\Http\Controllers\FormrentalController;
 
 Route::get('/formrental', [FormrentalController::class, 'create'])->name('formrental.create');
 Route::post('/formrental/store', [FormrentalController::class, 'store'])->name('formrental.store');
+

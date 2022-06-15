@@ -16,6 +16,7 @@
                 <b>Download App</b>
               </div>
             </div>
+            
             <div class="row pt-3">
               <div class="col">
                 Alfa Tower <br />

@@ -19,6 +19,7 @@
     <!-- isi -->
     @yield('container')
     
+    
     <!-- footer -->
     @include('layouts.template.footer')
     

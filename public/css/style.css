@@ -1,0 +1,182 @@
+/* general */
+body {
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    background-color: #0b2c3d;
+}
+
+.footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: rgb(190, 190, 190);
+}
+
+/* Home */
+.c1 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+#imagec1 {
+    text-align: center;
+}
+
+.c2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.c3 {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+.c4 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* contact us */
+#contenttitle {
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
+
+form {
+    padding-top: 1rem;
+}
+
+#button {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+/* rental */
+#rental {
+    margin-top: 7rem;
+    margin-bottom: 2rem;
+}
+
+.tab-content {
+    padding: 1rem 2rem;
+    background-color: white;
+    width: 1500px;
+    height: 780px;
+}
+
+/* ABOUT US */
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: 0.75rem;
+    margin-left: 0.75rem;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+}
+
+@media (min-width: 40em) {
+    .carousel-caption p {
+        margin-bottom: 1.25rem;
+        font-size: 1.25rem;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 62em) {
+    .featurette-heading {
+        margin-top: 7rem;
+    }
+}
+
+/* info */
+.d1 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.d2 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.d3 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.d4 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.news {
+    background-color: #8fb8cb;
+    padding: 10px;
+}
+
+.n1 {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.n2 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+.h1 {
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+}
+
+#honda {
+    padding-top: 0rem;
+}

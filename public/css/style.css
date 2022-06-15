@@ -67,6 +67,14 @@ form {
     height: 830px;
 }
 
+#listrental {
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+}
+#listrentalcard {
+    margin-top: 1rem;
+}
+
 /* ABOUT US */
 .carousel {
     margin-bottom: 4rem;

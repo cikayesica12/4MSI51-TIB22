@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormrentalController;
+use App\Http\Controllers\ListrentalController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,6 @@ use App\Http\Controllers\FormrentalController;
 
 Route::get('/formrental', [FormrentalController::class, 'create'])->name('formrental.create');
 Route::post('/formrental/store', [FormrentalController::class, 'store'])->name('formrental.store');
+
+Route::get('/listrental', [ListrentalController::class, 'index'])->name('listrental.index');
 

@@ -19,6 +19,7 @@ class formrental extends Model
         'location',
         'startrental',
         'endrental'
+        
     ];
 
 }

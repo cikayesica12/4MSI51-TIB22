@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ListrentalController extends Controller
 {
@@ -13,7 +14,8 @@ class ListrentalController extends Controller
      */
     public function index()
     {
-        return view('layouts.user.listrental');
+        $listrentals = DB::table('listrental')->get();
+        return view('layouts.user.listrental', compact('listrentals'));
     }
 
     /**

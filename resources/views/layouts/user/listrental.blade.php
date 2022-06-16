@@ -3,46 +3,21 @@
 @section('container')
 <div class="container" id="listrental">
     <div class="row">
+        @foreach($listrental as $listrental)
         <div class="col-3" id="listrentalcard">
             <div class="card" style="width: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <img src="{{assett('/uploadimage'.$listrental->imagevehicle)}}" class="card-img-top" alt="{{$listrental->imagevehicle}}">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <h5 class="card-title">{{$listrental->brand}}</h5>
+                        <p class="card-text">Type Rental : {{$listrental->typerental}}</p>
+                        <p class="card-text">Price : Rp.{{$listrental->price}}\day</p>
+                        <p class="card-text">Status : {{$listrental->status}} </p>
+
+                        <a href="{{route('formrental.create')}}" class="btn btn-primary">Book</a>
                     </div>
             </div>
         </div>
-        <div class="col-3" id="listrentalcard">
-            <div class="card" style="width: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-        </div>
-        <div class="col-3" id="listrentalcard">
-            <div class="card" style="width: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-        </div>
-        <div class="col-3" id="listrentalcard">
-            <div class="card" style="width: 15rem;">
-                <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection

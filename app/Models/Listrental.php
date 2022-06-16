@@ -10,6 +10,7 @@ class Listrental extends Model
     use HasFactory;
     protected $table = "listrentals";
     protected $fillable = [
+        'imagevehicle',
         'typerental',
         'brand',
         'price',

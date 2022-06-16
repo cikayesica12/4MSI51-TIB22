@@ -15,6 +15,7 @@ class CreateListrentalsTable extends Migration
     {
         Schema::create('listrentals', function (Blueprint $table) {
             $table->id();
+            $table->string('imagevehicle',100);
             $table->string('typerental',100);
             $table->string('brand', 100);
             $table->integer('price');

@@ -15,11 +15,9 @@ use App\Http\Controllers\ListrentalController;
 |
 */
 
-// Route::get('/formrental', function(){
-//     return view('layouts.user.formrental',  [
-//         "title" => "Form Rental"
-//     ]);
-// });
+Route::get('/dashboard', function(){
+    return view('layouts.admin.create-listrental');
+});
 
 Route::get('/formrental', [FormrentalController::class, 'create'])->name('formrental.create');
 Route::post('/formrental/store', [FormrentalController::class, 'store'])->name('formrental.store');

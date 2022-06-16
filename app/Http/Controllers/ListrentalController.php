@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Listrental;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -36,7 +37,18 @@ class ListrentalController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $nm = $request->imagevehicle;
+        $namaFile =$nm->getClientOriginalName();
+        $dtUpload = new Listrental;
+        $dtUpload->typerental = $request->typerental;
+        $dtUpload->brand = $request->brand;
+        $dtUpload->price = $request->price;
+        $dtUpload->status = $request->status;
+        $dtUpload->imagevehicle = $namaFile;
+
+        $nm->move(public_path(). '/uploadimage', $namaFile);
+        $dtUpload->save();
+        return redirect()->back();
     }
 
     /**

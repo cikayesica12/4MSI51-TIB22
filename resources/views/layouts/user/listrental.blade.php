@@ -11,8 +11,8 @@
                 <img src="{{asset('/uploadimage/'.$listrentals->imagevehicle)}}" class="card-img-top" alt="{{$listrentals->imagevehicle}}" height="150px">
                     <div class="card-body">
                         <h5 class="card-title">{{$listrentals->brand}}</h5>
-                        <p class="card-text">Type Rental : {{$listrentals->typerental}}</p>
-                        <p class="card-text">Price : Rp.{{$listrentals->price}}\day</p>
+                        <p class="card-text">Type Rental: {{$listrentals->typerental}}</p>
+                        <p class="card-text">Price : Rp.{{$listrentals->price}}/day</p>
                         <p class="card-text">Status : {{$listrentals->status}} </p>
 
                         <a href="{{route('formrental.create')}}" class="btn btn-primary">Book</a>

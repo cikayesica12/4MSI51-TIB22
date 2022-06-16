@@ -38,7 +38,7 @@ class ListrentalController extends Controller
     public function store(Request $request)
     {
         $nm = $request->imagevehicle;
-        $namaFile =$nm->getClientOriginalName();
+        $namaFile =time().rand(100,99).".".$nm->getClientOriginalExtension();
         $dtUpload = new Listrental;
         $dtUpload->typerental = $request->typerental;
         $dtUpload->brand = $request->brand;
@@ -46,7 +46,7 @@ class ListrentalController extends Controller
         $dtUpload->status = $request->status;
         $dtUpload->imagevehicle = $namaFile;
 
-        $nm->move(public_path(). '/uploadimage', $namaFile);
+        $nm->move(public_path().'/uploadimage', $namaFile);
         $dtUpload->save();
         return redirect()->back();
     }

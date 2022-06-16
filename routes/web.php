@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\Dashboard;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\FormrentalController;
 use App\Http\Controllers\ListrentalController;
@@ -33,11 +34,7 @@ Route::get('/contactusadmin', 'App\Http\Controllers\ContactusadminController@ind
 Route::get('/contactusadmin/delete/{id}', 'App\Http\Controllers\ContactusadminController@delete_form');
 Route::post('/create_form', 'App\Http\Controllers\ContactusController@create_form');
 
-Route::get('/dashboard', function () {
-    return view('layouts.admin.dashboard',[
-        "title" => "Dashboard"
-    ]);
-});
+Route::get('/dashboard', [Dashboard::class,"index"])->name('dashboard.index');
 
 Route::get('/contactus', function () {
     return view('layouts.user.contactus',[

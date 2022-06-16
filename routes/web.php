@@ -28,7 +28,5 @@ Route::get('/listrental', [ListrentalController::class, 'index'])->name('listren
 Route::get('/listrental/create', [ListrentalController::class, 'create'])->name('listrental.create');
 Route::post('/listrental/store', [ListrentalController::class, 'store'])->name('listrental.store');
 
-
-
 Route::get('/login', [AuthController::class,"showLoginForm"])->name('showLoginForm');
 Route::post('/login', [AuthController::class,"login"])->name('login');

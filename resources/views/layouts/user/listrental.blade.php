@@ -3,15 +3,15 @@
 @section('container')
 <div class="container" id="listrental">
     <div class="row">
-        @foreach($listrental as $listrental)
+        @foreach($listrentals as $listrentals)
         <div class="col-3" id="listrentalcard">
             <div class="card" style="width: 15rem;">
-                <img src="{{assett('/uploadimage'.$listrental->imagevehicle)}}" class="card-img-top" alt="{{$listrental->imagevehicle}}">
+                <img src="{{assett('/uploadimage'.$listrentals->imagevehicle)}}" class="card-img-top" alt="{{$listrental->imagevehicle}}">
                     <div class="card-body">
-                        <h5 class="card-title">{{$listrental->brand}}</h5>
-                        <p class="card-text">Type Rental : {{$listrental->typerental}}</p>
-                        <p class="card-text">Price : Rp.{{$listrental->price}}\day</p>
-                        <p class="card-text">Status : {{$listrental->status}} </p>
+                        <h5 class="card-title">{{$listrentals->brand}}</h5>
+                        <p class="card-text">Type Rental : {{$listrentals->typerental}}</p>
+                        <p class="card-text">Price : Rp.{{$listrentals->price}}\day</p>
+                        <p class="card-text">Status : {{$listrentals->status}} </p>
 
                         <a href="{{route('formrental.create')}}" class="btn btn-primary">Book</a>
                     </div>

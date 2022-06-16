@@ -14,7 +14,7 @@ class ListrentalController extends Controller
      */
     public function index()
     {
-        $listrentals = DB::table('listrental')->get();
+        $listrentals = DB::table('listrentals')->get();
         return view('layouts.user.listrental', compact('listrentals'));
     }
 
@@ -25,7 +25,7 @@ class ListrentalController extends Controller
      */
     public function create()
     {
-        //
+        return view('layouts.admin.create-listrental');
     }
 
     /**

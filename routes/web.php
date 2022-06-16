@@ -23,4 +23,5 @@ Route::get('/formrental', [FormrentalController::class, 'create'])->name('formre
 Route::post('/formrental/store', [FormrentalController::class, 'store'])->name('formrental.store');
 
 Route::get('/listrental', [ListrentalController::class, 'index'])->name('listrental.index');
+Route::get('/listrental/create', [ListrentalController::class, 'create'])->name('listrental.create');
 

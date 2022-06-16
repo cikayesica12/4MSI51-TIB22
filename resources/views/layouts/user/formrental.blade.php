@@ -94,6 +94,7 @@
                     </div>
                   </div>
                   <button type="sudmit" class="btn btn-primary">SUBMIT</button>
+                  <button type="reset" class="btn btn-primary">CLEAR</button>
               </form>
             </div>
           </div>

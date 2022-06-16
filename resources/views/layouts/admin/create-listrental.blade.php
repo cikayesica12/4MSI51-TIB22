@@ -9,7 +9,7 @@
     </div>
     <div class="row">
         <div class="col">
-            <form action="" method="POST">
+            <form action="{{route('listrental.store')}}" method="POST" enctype="multipart/form-data">
                 @csrf
                 <div class="row my-2">
                     <div class="col-3">

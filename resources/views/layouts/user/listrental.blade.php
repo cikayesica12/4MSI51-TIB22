@@ -6,7 +6,7 @@
         @foreach($listrentals as $listrentals)
         <div class="col-3" id="listrentalcard">
             <div class="card" style="width: 15rem;">
-                <img src="{{assett('/uploadimage'.$listrentals->imagevehicle)}}" class="card-img-top" alt="{{$listrental->imagevehicle}}">
+                <img src="{{asset('/uploadimage'.$listrentals->imagevehicle)}}" class="card-img-top" alt="{{$listrentals->imagevehicle}}">
                     <div class="card-body">
                         <h5 class="card-title">{{$listrentals->brand}}</h5>
                         <p class="card-text">Type Rental : {{$listrentals->typerental}}</p>

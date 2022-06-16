@@ -44,19 +44,19 @@
               <div class="col">
                 <ul style="list-style-type: none; padding: 0">
                   <li>
-                    <a style="text-decoration: none; color: black" href="/rentalcar"> Car</a>
+                    <a style="text-decoration: none; color: black" href="{{route("listrental.index")}}"> Car</a>
                   </li>
                   <li>
-                    <a style="text-decoration: none; color: black" href="/rentalbus"> Bus</a>
+                    <a style="text-decoration: none; color: black" href="{{route("listrental.index")}}"> Bus</a>
                   </li>
                   <li>
-                    <a style="text-decoration: none; color: black" href="/rentalminibus"> Mini Bus </a>
+                    <a style="text-decoration: none; color: black" href="{{route("listrental.index")}}ibus"> Mini Bus </a>
                   </li>
                   <li>
-                    <a style="text-decoration: none; color: black" href="/rentalwedding"> Wedding Car </a>
+                    <a style="text-decoration: none; color: black" href="{{route("listrental.index")}}ding"> Wedding Car </a>
                   </li>
                   <li>
-                    <a style="text-decoration: none; color: black" href="/rentalboat"> Boat</a>
+                    <a style="text-decoration: none; color: black" href="{{route("listrental.index")}}t"> Boat</a>
                   </li>
                 </ul>
               </div>

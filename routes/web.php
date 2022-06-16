@@ -17,10 +17,7 @@ use App\Http\Controllers\ListrentalController;
 |
 */
 
-Route::get('/dashboard', function(){
-    return view('layouts.admin.create-listrental');
-});
-
+Route::get('/formrental/index', [FormrentalController::class, 'index'])->name('formrental.index');
 Route::get('/formrental', [FormrentalController::class, 'create'])->name('formrental.create');
 Route::post('/formrental/store', [FormrentalController::class, 'store'])->name('formrental.store');
 
@@ -32,3 +29,35 @@ Route::post('/listrental/store', [ListrentalController::class, 'store'])->name('
 
 Route::get('/login', [AuthController::class,"showLoginForm"])->name('showLoginForm');
 Route::post('/login', [AuthController::class,"login"])->name('login');
+
+/*Route Contact US Admin*/
+Route::get('/contactusadmin', 'App\Http\Controllers\ContactusadminController@index');
+Route::get('/contactusadmin/delete/{id}', 'App\Http\Controllers\ContactusadminController@delete_form');
+Route::post('/create_form', 'App\Http\Controllers\ContactusController@create_form');
+
+Route::get('/dashboard', function () {
+    return view('layouts.admin.dashboard',[
+        "title" => "Dashboard"
+    ]);
+});
+
+Route::get('/contactus', function () {
+    return view('layouts.user.contactus',[
+        "title" => "Contact Us"
+    ]);
+});
+Route::get('/', function () {
+    return view('layouts.user.home',[
+        "title" => "Home"
+    ]);
+});
+Route::get('/info', function () {
+    return view('layouts.user.info',[
+        "title" => "Info"
+    ]);
+});
+Route::get('/aboutus', function () {
+    return view('layouts.user.aboutus',[
+        "title" => "About Us"
+    ]);
+});

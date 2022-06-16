@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\formrental;
+use Illuminate\Support\Facades\DB;
 
 class FormrentalController extends Controller
 {
@@ -14,7 +15,8 @@ class FormrentalController extends Controller
      */
     public function index()
     {
-        // return view('layouts.user.formrental');
+        $formrentals = DB::table('formrentals')->get();
+        return view('layouts.admin.summary-formrental', compact('formrentals'));
     }
 
     /**

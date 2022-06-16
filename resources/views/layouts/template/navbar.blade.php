@@ -9,19 +9,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/formrental">Home</a>
+              <a class="nav-link" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link " href="/aboutus">About Us</a>
+              <a class="nav-link" href="/aboutus">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Rental </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="/rentalcar">Car</a></li>
-                <li><a class="dropdown-item" href="/rentalminibus">Mini Bus</a></li>
-                <li><a class="dropdown-item" href="/rentalbus">Bus</a></li>
-                <li><a class="dropdown-item" href="/rentalwedding">Wedding Car</a></li>
-                <li><a class="dropdown-item" href="/rentalboat">Boat</a></li>
+                <li><a class="dropdown-item" href="{{route("listrental.index")}}">Car</a></li>
+                <li><a class="dropdown-item" href="{{route("listrental.index")}}">Mini Bus</a></li>
+                <li><a class="dropdown-item" href="{{route("listrental.index")}}">Bus</a></li>
+                <li><a class="dropdown-item" href="{{route("listrental.index")}}">Wedding Car</a></li>
+                <li><a class="dropdown-item" href="{{route("listrental.index")}}">Boat</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
@@ -37,7 +37,7 @@
               <a class="nav-link" href="/contactus">Contact Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin">Admin</a>
+              <a class="nav-link" href="/login">Admin</a>
             </li>
           </ul>
         </div>

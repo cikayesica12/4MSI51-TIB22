@@ -1,5 +1,7 @@
 @extends('layouts.template.main')
 
+@section('title', 'List Rental')
+
 @section('container')
 <div class="container" id="listrental">
     <div class="row">

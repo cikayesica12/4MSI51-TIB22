@@ -1,5 +1,7 @@
 @extends('layouts.template.main-admin')
 
+@section('title', 'List Rental Admin')
+
 @section('container')
 <div class="container" style="padding-left: 25rem; padding-top: 1rem">
     <div class="row mb-3">

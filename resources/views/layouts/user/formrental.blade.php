@@ -1,5 +1,7 @@
 @extends('layouts.template.main')
 
+@section('title', 'Form Rental')
+
 @section('container')
 <div id="rental" class="content">
     <div class="container">

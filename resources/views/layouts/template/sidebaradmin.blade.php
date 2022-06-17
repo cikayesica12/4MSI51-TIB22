@@ -40,5 +40,11 @@
           Contact Us
         </a>
       </li>
+      <li>
+        <hr>
+        <a href="/" class="nav-link text-white">
+          Log Out
+        </a>
+      </li>
     </ul>
   </div>

@@ -17,7 +17,7 @@ return new class extends Migration
             $table->bigIncrements('id');
             $table->string('nama_lengkap')->nullable();
             $table->string('email');
-            $table->integer('phone');
+            $table->string('phone');
             $table->longText('message');
             $table->softDeletes();
             $table->timestamps();

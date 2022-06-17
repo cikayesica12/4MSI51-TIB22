@@ -26,7 +26,8 @@ class ListrentalController extends Controller
      */
     public function create()
     {
-        return view('layouts.admin.create-listrental');
+        $listrentals = DB::table('listrentals')->get();
+        return view('layouts.admin.create-listrental', compact('listrentals'));
     }
 
     /**
@@ -93,6 +94,8 @@ class ListrentalController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $listrentals = Listrental::findOrFail($id);
+        $listrentals->delete();
+        return redirect()->back()->with("success"," Berhasil Delete Data Produk ! ");
     }
 }

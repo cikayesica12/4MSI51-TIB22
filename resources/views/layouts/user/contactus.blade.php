@@ -8,11 +8,11 @@
         <!-- baris 1 untuk judul -->
         <div class="row">
           <div id="contenttitle" class="col">
-            <div class="alert alert-success alert-dismissible mb-4" id="myAlert">
+            {{-- <div class="alert alert-success alert-dismissible mb-4" id="myAlert">
               <h6><i class="bi bi-check-circle-fill"></i> Your Request has been submitted, click <a href="/contactus" class="alert-link">here</a> to close</h6>
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
               <p>We will contact you back shortly, please always check your email</p>
-            </div>
+            </div> --}}
             <h4 style="text-align: center"><b>Let's Connect</b></h4>
           </div>
         </div>
@@ -58,7 +58,7 @@
                 <textarea required name="message" class="form-control" id="message" rows="5" placeholder="Write Here!"></textarea>
               </div>
               <div id="button" class="col">
-                <a href="#" class="up-icon"><button type="submit" onclick=myFunction() class="btn btn-primary">Submit</button></a>
+                <a href="#" class="up-icon"><button type="submit" onclick="javascript:return confirm(`Successfully Submitted`);" class="btn btn-primary">Submit</button></a>
               </div>
             </form>
           </div>
@@ -139,7 +139,7 @@
     </div>
 @endsection
 
-<!--Button Alert-->
+{{-- <!--Button Alert-->
 <script>
       var myAlert = document.getElementById("myAlert");
 
@@ -148,6 +148,6 @@
       function myFunction() {
         myAlert.style.display = "block";
       }
-</script>
+</script> --}}
 
 

@@ -12,7 +12,7 @@
 </head>
 <body class="body1">
     <div class="overlay"></div>
-    <form action="{{route('dashboard.index')}}" method="post" class="box">
+    <form action="{{route('login')}}" method="post" class="box">
         <div class="header">
             <h4> Login To Your Account </h4>
             <p>Enter your details below to continue!</p>
